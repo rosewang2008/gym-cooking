@@ -33,7 +33,7 @@ Please use this bibtex if you want to cite this repository in your publications:
 
 You can install the dependencies with `pip3`:
 ```
-git clone <TODO>
+git clone https://github.com/rosewang2008/gym-cooking.git
 cd gym-cooking
 pip3 install -e .
 ```
