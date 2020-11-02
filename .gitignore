@@ -6,7 +6,6 @@
 *.mov
 
 # Metrics and data
-misc/
 gym_cooking/misc/metrics/*data*/
 gym_cooking/misc/metrics/*graph*/
 gym_cooking/misc/metrics/*recipe*/
