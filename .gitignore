@@ -11,7 +11,6 @@ gym_cooking/misc/metrics/*graph*/
 gym_cooking/misc/metrics/*recipe*/
 gym_cooking/misc/game/record/
 gym_cooking/misc/game/screenshots/
-gym_cooking/run_experiments.sh
 
 # Visualizations
 gym_cooking/visualize_all.sh
