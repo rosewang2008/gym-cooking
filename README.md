@@ -47,9 +47,9 @@ Here, we discuss how to run a single experiment, run our code in manual mode, an
 For the code below, make sure that you are in **gym-cooking/gym_cooking/**. This means, you should be able to see the file `main.py` in your current directory.
 
 <p align="center">
-    <img src="images/2agents_open.png" width=260></img>
-    <img src="images/3agents_partial.png" width=260></img>
-    <img src="images/4agents_full.png" width=260></img>
+    <img src="images/2_open.png" width=260></img>
+    <img src="images/3_partial.png" width=260></img>
+    <img src="images/4_full.png" width=260></img>
 </p>
 
 ### Running an experiment 
@@ -95,23 +95,19 @@ To run on `3` agents, modify `run_experiments.sh` with `num_agents=3`.
 
 ### Creating visualizations
 
-To produce the graphs from our paper, you need to be in the `gym_cooking/misc/metrics` directory, i.e. 
+To produce the graphs from our paper, navigate to the `gym_cooking/misc/metrics` directory, i.e. 
 
 1. `cd gym_cooking/misc/metrics`.
 
-We've included the pkl files from our results under, `gym_cooking/misc/metrics/pickles.zip`. Unzip this, i.e.
-
-2. `unzip pickles.zip`
-
 To generate the timestep and completion graphs, run:
 
-3. `python make_graphs.py --legend --time-step`
-4. `python make_graphs.py --legend --completion`
+2. `python make_graphs.py --legend --time-step`
+3. `python make_graphs.py --legend --completion`
 
-This should generate corresponding graphs under `gym_cooking/misc/metrics/graphs_agents<#>` and `gym_cooking/misc/metrics/heatmaps`.
+This should generate the results figures that can be found in our paper.
 
-<p align="center">
-    <img src="images/graphs.png" width=400></img>
-    <img src="images/heatmap.png" width=350></img>
-</p>
+Results for homogenous teams (self-play experiments):
+![graphs](images/graphs.png)
 
+Results for heterogeneous teams (ad-hoc experiments):
+![heatmaps](images/heatmaps.png)
