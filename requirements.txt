@@ -5,8 +5,6 @@ decorator==4.4.2
 dill==0.3.2
 future==0.18.2
 gym==0.17.2
--e git+git@github.com:maxkw/cooking.git@78508f16afd8e6f64396d776895aa55c23251cb3#egg=gym_cooking
--e git+https://github.com/maximecb/gym-minigrid.git@6e22a44dc67414b647063692258a4f95ce789161#egg=gym_minigrid
 kiwisolver==1.2.0
 matplotlib==3.3.2
 networkx==2.5
