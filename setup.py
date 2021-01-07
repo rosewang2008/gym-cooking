@@ -26,7 +26,6 @@ setup(name='gym_cooking',
             'seaborn==0.11.0',
             'six==1.15.0',
             'termcolor==1.1.0',
-            'torch==1.6.0',
             'tqdm==4.50.1',
           ]
       )
