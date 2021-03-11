@@ -19,12 +19,12 @@ class GameImage(Game):
         if self.record:
             # Make game_record folder if doesn't already exist
             if not os.path.exists(self.game_record_dir):
-                os.mkdir(self.game_record_dir)
-   
+                os.makedirs(self.game_record_dir)
+
             # Clear game_record folder
             for f in os.listdir(self.game_record_dir):
                 os.remove(os.path.join(self.game_record_dir, f))
-    
+
     def get_image_obs(self):
         self.on_render()
         img_int = pygame.PixelArray(self.screen)
