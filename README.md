@@ -73,10 +73,11 @@ For example, running the salad recipe on the partial divider with 2 agents using
 Or, running the tomato-lettuce recipe on the full divider with 3 agents, one using UP, one with D&C, and the third with Bayesian Delegation:
 `python main.py --num-agents 2 --level full-divider_tl --model1 up --model2 dc --model3 bd`
 
+Although our work uses object-oriented representations for observations/states, the `OvercookedEnvironment.step` function returns *image observations* in the `info` object. They can be retrieved with `info['image_obs']`.  
+
 ### Additional commands
 
 The above commands can also be appended with the following flags:
-* `--with-image-obs` will return image observations instead of object-oriented observations.
 * `--record` will save the observation at each time step as an image in `misc/game/record`.
 
 ### Manual control
