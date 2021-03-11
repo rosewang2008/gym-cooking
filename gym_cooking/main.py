@@ -102,7 +102,6 @@ def main_loop(arglist):
             action_dict[agent.name] = action
 
         obs, reward, done, info = env.step(action_dict=action_dict)
-        print(type(obs))
 
         # Agents
         for agent in real_agents:
