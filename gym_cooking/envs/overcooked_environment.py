@@ -204,13 +204,15 @@ class OvercookedEnvironment(gym.Env):
         if self.arglist.record:
             self.game.save_image_obs(self.t)
 
+        # Get a plan-representation observation.
         new_obs = copy.copy(self)
-        # Getting an image observation
-        if self.arglist.with_image_obs:
-            new_obs = self.game.get_image_obs()
+        # Get an image observation
+        image_obs = self.game.get_image_obs()
+
         done = self.done()
         reward = self.reward()
         info = {"t": self.t, "obs": new_obs,
+                "image_obs": image_obs,
                 "done": done, "termination_info": self.termination_info}
         return new_obs, reward, done, info
 
