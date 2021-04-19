@@ -1,6 +1,6 @@
 # Code for OvercookedEnvironment (gym-cooking) and "Too many cooks: Bayesian inference for coordinating multi-agent collaboration"
 
-Code for ["Too many cooks: Bayesian inference for coordinating multi-agent collaboration"](https://arxiv.org/pdf/2003.11778.pdf), Winner of CogSci 2020 conference award in computational modelling. 
+Code for ["Too many cooks: Bayesian inference for coordinating multi-agent collaboration"](https://onlinelibrary.wiley.com/doi/10.1111/tops.12525), Winner of the CogSci 2020 Computational Modeling Prize in High Cognition, and a NeurIPS 2020 CoopAI Workshop Best Paper. 
 
 Contents:
 - [Introduction](#introduction)
@@ -19,13 +19,18 @@ Contents:
 
 Collaboration requires agents to coordinate their behavior on the fly, sometimes cooperating to solve a single task together and other times dividing it up into sub-tasks to work on in parallel. Underlying the human ability to collaborate is theory-of-mind, the ability to infer the hidden mental states that drive others to act. Here, we develop Bayesian Delegation, a decentralized multi-agent learning mechanism with these abilities. Bayesian Delegation enables agents to rapidly infer the hidden intentions of others by inverse planning. We test Bayesian Delegation in a suite of multi-agent Markov decision processes inspired by cooking problems. On these tasks, agents with Bayesian Delegation coordinate both their high-level plans (e.g. what sub-task they should work on) and their low-level actions (e.g. avoiding getting in each other’s way). In a self-play evaluation, Bayesian Delegation outperforms alternative algorithms. Bayesian Delegation is also a capable ad-hoc collaborator and successfully coordinates with other agent types even in the absence of prior experience. Finally, in a behavioral experiment, we show that Bayesian Delegation makes inferences similar to human observers about the intent of others. Together, these results demonstrate the power of Bayesian Delegation for decentralized multi-agent collaboration.
 
-Please use this bibtex if you want to cite this repository in your publications:
+You can use this bibtex if you would like to cite this work (Wu and Wang et al., 2021):
 ```
-@article{wang2020too,
-  title={Too many cooks: Coordinating multi-agent collaboration through inverse planning},
-  author={Wang, Rose E and Wu, Sarah A and Evans, James A and Tenenbaum, Joshua B and Parkes, David C and Kleiman-Weiner, Max},
-  journal={arXiv preprint arXiv:2003.11778},
-  year={2020}
+@article{wu_wang2021too,
+  author = {Wu, Sarah A. and Wang, Rose E. and Evans, James A. and Tenenbaum, Joshua B. and Parkes, David C. and Kleiman-Weiner, Max},
+  title = {Too many cooks: Coordinating multi-agent collaboration through inverse planning},
+  journal = {Topics in Cognitive Science},
+  year = {2021},
+  volume = {n/a},
+  number = {n/a},
+  keywords = {Coordination, Social learning, Inverse planning, Bayesian inference, Multi-agent reinforcement learning},
+  doi = {https://doi.org/10.1111/tops.12525},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/tops.12525},
 }
 ```
 
